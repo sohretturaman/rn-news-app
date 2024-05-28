@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import styles from './styles';
 const TextInputcomp = (props) => {
-  const {handleSubmit} = props;
+  const {handleSearch} = props;
   const [input,setInput] =useState('')
 
   const onSubmitEdit =()=>{
-    handleSubmit(input)
+    console.log('current input', input)
+    handleSearch(input)
   }
   return (
     <View style={styles.container}>

@@ -17,7 +17,7 @@ const {width} = Dimensions.get('window');
 
 const HeaderImages = (props) => {
   const {data,navigation} = props;
-console.log('data in head images', data[0])
+//console.log('data in head images', data[0])
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const pan = useRef(new Animated.Value(0)).current;

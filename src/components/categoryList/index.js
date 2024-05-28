@@ -7,8 +7,8 @@ import { Pressable } from "react-native";
 
 const categoryData = [
   "general",
-  "health",
-  "sports",
+  "economy",
+  "sport",
   "entertainment",
   "technology",
   "business",

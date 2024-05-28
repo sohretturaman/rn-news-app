@@ -1,6 +1,7 @@
 import {View, Text, Dimensions} from 'react-native';
 import React, {useState} from 'react';
-import {Header, NewsList} from '../../components';
+import {Header, NewsList, TextInputcomp} from '../../components';
+import { NewsApi } from '../../service';
 
 const winWidth = Dimensions.get('window').width;
 const News = props => {
@@ -26,7 +27,7 @@ const News = props => {
   };
   return (
     <View>
-      <Header handleSubmit={handleSubmit} />
+      < TextInputcomp handleSearch={handleSubmit} />
       <NewsList Height={winWidth * 1.5} navigation={navigation} />
     </View>
   );

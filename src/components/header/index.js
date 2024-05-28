@@ -6,6 +6,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 const Header = (props) => {
   const {handleSubmit} =props
+  
   return (
     <View style={styles.container}>
       <TextInputcomp  handleSubmit = {handleSubmit}/>

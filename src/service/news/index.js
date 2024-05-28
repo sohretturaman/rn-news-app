@@ -17,7 +17,7 @@
 // export  {getNewsList,addNews} ; 
 
 
-import { NEWS_URL } from '../NetworkUrls';
+import { GET_BY_LOCAL, NEWS_URL } from '../NetworkUrls';
 import {get, post} from '../main';
 
 const getNewsApi = body => {
@@ -27,7 +27,7 @@ const getNewsApi = body => {
 };
 
 const getNewsLocalApi = detailUrl => {
-  const  newsUrl =  + detailUrl;
+  const  newsUrl = GET_BY_LOCAL + detailUrl;
   console.log('ger news api func in news index url',newsUrl )
   return get(newsUrl);
 };

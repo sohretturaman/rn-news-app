@@ -23,11 +23,11 @@ const urlSent = `?country=${country}&tag=${tag}`;
 
 
 
-const  data  =useCallback( () => {
-  NewsApi.getNewsApi(urlSent)
+const  data  = useCallback( () => {
+ NewsApi.getNewsApi(urlSent)
     .then(data => {
       setNews(data.result);
-      console.log('news', news);
+     // console.log('news', news);
     })
     .catch(error => {
       console.error('Hata:', error);
@@ -38,14 +38,14 @@ const  data  =useCallback( () => {
 
 useEffect(()=>{
 
-  data(); 
-},[data]);
+ // data(); 
+},[]);
 const getByCategory =(categoryInfo)=>{
   console.log('categoryInfo', categoryInfo)
   const urlSent = `?country=${country}&tag=${categoryInfo}`;
   NewsApi.getNewsApi(urlSent)
     .then(data => {
-      console.log('data in home', data);
+      console.log('data with category', data);
       setCategoryData(data.result);
       console.log('news', news);
     })
